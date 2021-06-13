@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+    <form>
+        <fieldset>
+            <legend>Dados pessoais</legend>
+            <table>
+                <tr>
+                    <td>
+                        <label for="nome">Nome Completo</label>
+                        <input type="text" name='nome' id='nome' required/>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="telefone">Telefone</label>
+                        <input type="tel" name='telefone' id='telefone' required/>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="data de nascimento">Data de nascimento</label>
+                        <input type="date" name="Data de nascimento" id="Data de nascimento" required/>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="bairro">Bairro</label>
+                        <input type="text" name="Bairro" id="Bairro" required/>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="email">Email</label>
+                        <input type="email" name="Email" id="email"required/>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="Linkedin">Linkedin</label>
+                        <input type="text" name='Linkedin' id='Linkedin'>
+                        <label for="Instagram">Instagram</label>
+                        <input type="text" name='Instagram' id='Instagram'>
+                    </td>
+                </tr>
+            </table>
+        </fieldset>
+        <fieldset>
+            <legend>Dados Profissionais</legend>
+            <table>
+                <tr>
+                    <td>
+                        <label for="Nivel de escolaridade">Nivel de Escolaridade</label>
+                        <select name="Nivel de escolaridade" id="Nivel de escolaridade">
+                            <option value="EF">Ensino Fundamental</option>
+                            <option value="EM">Ensino Medio</option>
+                            <option value="ET">Ensino Técnico</option>
+                            <option value="ESC">Ensino Superior Cursando</option>
+                            <option value="ESC">ENsino Superior Completo</option>
+                            <option value="PG">Pós-Graduação</option>
+                            <option value="M">Mestrado</option>
+                            <option value="D">Doutorado</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="Profissão">Profissão</label>
+                        <input type="text" name='Profissão' id='Profissão'>
+                    </td>
+                </tr>
+            </table>
+        </fieldset>
+        <fieldset>
+            <legend>Dados extras</legend>
+            <table>
+                <tr>
+                    <td>
+                        <label for="Hobbies">Hobbies</label>
+                        <select multiple name="Hobbies" id="Hobbies">
+                            <option value="Artes">Pintar e/ou desenhar</option>
+                            <option value="Livros">Ler e/ou escrever</option>
+                            <option value="Passeios">Viajar e/ou passear</option>
+                            <option value="Esportes">Praticar esportes ou atividades fisicas</option>
+                            <option value="Filmes">Assistir séries e filmes</option>
+                            <option value="Musica">Ouvir musica e/ou tocar instrumento musical</option>
+                            <option value="Outros">Outros</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="Livro">Livro que mais impactou sua vida</label>
+                        <input type="text" name='Livro' id='Livro'>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>Fatos que gostaria que soubéssemos
+                            <textarea name="Dados" id="Fatos da vida" cols="30" rows="10"></textarea>
+                        </p>
+                    </td>
+                </tr>
+            </table>
+        </fieldset>
+        <fieldset>
+            <legend>Fim do formulário</legend>
+            <table>
+                <tr>
+                    <td>
+                        <input type="reset" value="Apagar">
+                        <input type="submit" value="Enviar">
+                    </td>
+                </tr>
+            </table>
+        </fieldset>
+    </form>
+    
+
+    
+</body>
+</html>
