@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+    <link rel="shortcut icon" href="favicon.ico" />
+</head>
+<body>
+    <ul>
+        <li><a href="pagina_inicial.html">A água e o corpo humano</a></li>
+        <li><a href="tabela.html">Relação da água com cada idade</a></li>
+        <li><a href="listas.html">10 motivos para te incentivar a beber mais água</a></li>
+        <li><a href="form_contato.html">Cadastre-se</a></li>
+        <li><a href="biografia.html">Quem sou eu?</a></li>   
+    </ul>
+    <h2>Quer ficar por dentro de todas nossas notícias e receber nossas dicas e orientações?<br>
+    Se cadastre e não perca!</h2>
+    <img src="cadastro.jpg" alt="Foto de pranchetas" width="200" height="100">
+    <form>
+        <fieldset>
+            <legend>Informações para cadastro</legend>
+            <table>
+            <tr>
+                <td>
+                    <label for="nome">Nome Completo</label>
+                    <input type="text" name='nome' id='nome' required/>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="data de nascimento">Data de nascimento</label>
+                    <input type="date" name="Data de nascimento" id="Data de nascimento" required/>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="Sexo">Sexo</label>
+                    <br>
+                    <input type="radio" name='Sexo' value='Masculino'>Masculino
+                    <br>
+                    <input type="radio" name='Sexo' value='Feminino'>Feminino
+                    <br>
+                    <input type="radio" name='Sexo' value='Indefinido'>Prefiro não dizer
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p>Insira seu telefone para receber nossas novidades</p>
+                    <label for="telefone">Telefone</label>
+                    <input type="tel" name='telefone' id='telefone'/>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="Email">Email</label>
+                    <input type="email" name="email" id="email">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="Senha">Senha</label>
+                    <input type="password" name="senha" id="senha">
+                </td>
+            </tr>
+            </table>
+        </fieldset>
+        <fieldset>
+            <legend>Dados pessoais importantes</legend>
+            <table>
+                <tr>
+                    <td>
+                        <label for="Agua">Insira a quantidade de água que ingere por dia</label>
+                        <select name="agua" id="agua">
+                            <option value="0-500ml">0-500ml</option>
+                            <option value="500ml-1,5L">500ml-1,5L</option>
+                            <option value="1,5L-2L">1,5L-2L</option>
+                            <option value="+2L">+2L</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="saúde">Possui algum problema de sáude?</label>
+                        <input type="text" name="saude" id="saude">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="gestante">Você está gestante e/ou amamentando?</label>
+                        <br>
+                        <input type="radio" name="gestante" value="Sim">Sim 
+                        <br>
+                        <input type="radio" name="gestante" value="Não">Não 
+                    </td>
+                </tr>
+            </table>
+        </fieldset>
+        <fieldset>
+            <legend>Finalização de cadastro</legend>
+            <table>
+                <tr>
+                    <td>
+                        <input type="reset" value="Apagar">
+                        <input type="submit" value="Enviar">
+                    </td>
+                </tr>
+            </table>
+        </fieldset>
+    </form>
+    
+</body>
+</html>
